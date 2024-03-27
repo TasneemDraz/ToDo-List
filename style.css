@@ -1,0 +1,66 @@
+body{
+    background-image: url(https://media.istockphoto.com/id/1011182136/photo/check-off-completed-tasks-on-a-to-do-list.jpg?s=2048x2048&w=is&k=20&c=49i3xw2_dxZzTwks_WbELUixqrOm0jdjd-s-qhjIUi4=);
+ }
+
+.button {
+    border: 2px solid #766f6f;
+    text-decoration: none;
+    color: #1d1c1c;
+    padding: 10px 20px;
+    border-radius: 55px;
+    position: relative;
+    margin: 100px;
+  
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+  }
+  
+  .button-container button {
+    flex: 1;
+    margin: 0 10px; /* Adjust the margin as per your requirement */
+   
+  }
+
+button:hover{
+    background-color: rgba(81, 13, 240, 0.955);
+    color: #ffffff;
+}
+
+
+.Location{
+ 
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      
+      
+}
+
+#ShowYourLocation{
+margin: 25px;
+
+}
+.todolist .status , .todolist .titles , .todolist .buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.todolist #ToDoList , .todolist #Progress , .todolist #Done{
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid #1a2e35;
+    color : #1a2e35;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    width: 350px;
+}

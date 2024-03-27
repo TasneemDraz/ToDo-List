@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <div class="Location">
+        <button onclick="GetCurrentLocation()"> Your Location </button>
+        <div id="ShowYourLocation"></div>
+    </div>
+
+    <div class="todolist">
+        <label for="todo">Enter your To-Do list :</label>
+        <input type="text" id="todo" name="todo" value="" placeholder="What do you need to do ?">
+        <button onclick="AddToDo()"> Add  </button>
+        <button onclick="ClearList()">Reset</button>
+        <div class="titles">
+            <h2>To-Do List</h2>
+            <h2>Progress</h2>
+            <h2>Done</h2>
+        </div>
+        <div class="status">
+            <div id="ToDoList"
+                 ondragover="allowDrop(event)"
+                 ondrop="drop(event)">
+            </div>
+            <div id="Progress" 
+                 ondragover="allowDrop(event)"
+                 ondrop="drop(event)">
+            </div>
+            <div id="Done"
+                 ondragover="allowDrop(event)"
+                 ondrop="drop(event)">
+            </div>
+        </div>
+        <div class="button-container">
+            <button onclick="ClearToDo()">Remove To-Do List</button>
+            <button onclick="ClearProgress()">Remove Progress List</button>
+            <button onclick="ClearDone()">Remove Done List</button>
+        </div>
+    </div>
+</body>
+</html>
